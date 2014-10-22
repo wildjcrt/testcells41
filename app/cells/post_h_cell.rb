@@ -9,4 +9,9 @@ class PostHCell < Cell::ViewModel
     @post = args[:post]
     render
   end
+
+  def link_2d(args)
+    @post = args[:post]
+    render
+  end
 end
