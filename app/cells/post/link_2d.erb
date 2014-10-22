@@ -1,0 +1,5 @@
+<% 5.times do %>
+  <%= link_to("posts/#{@post.id}") do %>
+    <%= @post.title %>
+  <% end %>
+<% end %>
