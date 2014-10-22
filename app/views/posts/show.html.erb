@@ -9,11 +9,11 @@
   <strong>Content:</strong>
   <%= @post.content %>
   <br><br>
-  This will be fine in one-depth block.
-  erb cells: <%= cell(:post).call(:link_good, :post => @post) %>
-  <br><br>
   This will be fine in one-depth block with haml.
   haml cells: <%= cell(:post_h).call(:link_good, :post => @post) %>
+  <br><br>
+  This also works fine in two-depth block with haml.
+  haml cells: <%= cell(:post_h).call(:link_2d, :post => @post) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
