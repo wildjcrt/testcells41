@@ -38,3 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'cells', :git => 'git://github.com/apotonick/cells'
+gem 'haml'
