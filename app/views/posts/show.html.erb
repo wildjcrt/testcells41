@@ -11,6 +11,9 @@
   <br><br>
   This will be fine in one-depth block.
   erb cells: <%= cell(:post).call(:link_good, :post => @post) %>
+  <br><br>
+  This also shows error "Template missing: view: `link_h.erb`".
+  haml cells: <%= cell(:post).call(:link_h, :post => @post) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
