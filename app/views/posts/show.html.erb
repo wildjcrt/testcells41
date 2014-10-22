@@ -11,6 +11,10 @@
   <br><br>
   This will be fine in one-depth block.
   erb cells: <%= cell(:post).call(:link_good, :post => @post) %>
+  <br><br>
+  This will be fail in two-depths block.
+  Error msg: "undefined local variable or method `_erbout_tmp'".
+  erb cells: <%= cell(:post).call(:link_2d, :post => @post) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
