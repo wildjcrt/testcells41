@@ -1,4 +1,6 @@
 class PostCell < Cell::ViewModel
+  Cell::ViewModel::template_engine = "haml"
+
   def show
     render
   end
@@ -15,6 +17,6 @@ class PostCell < Cell::ViewModel
 
   def link_h(args)
     @post = args[:post]
-    render :format => :haml
+    render
   end
 end
