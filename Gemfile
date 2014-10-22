@@ -41,4 +41,4 @@ gem 'spring',        group: :development
 gem 'quiet_assets'
 
 gem 'cells', :git => 'git://github.com/apotonick/cells'
-gem 'haml'
+# gem 'haml'
