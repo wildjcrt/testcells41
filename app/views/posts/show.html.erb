@@ -8,6 +8,9 @@
 <p>
   <strong>Content:</strong>
   <%= @post.content %>
+  <br><br>
+  This will be fine in one-depth block.
+  erb cells: <%= cell(:post).call(:link_good, :post => @post) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
